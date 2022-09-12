@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      background-image:linear-gradient(45deg, pink, purple);
+      height: 100vh;
+  }
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-evenly;
+    }
+  
+  li {
+    list-style: none;
+  } 
+  
+  
+  a:link { 
+    color: white;
+    text-decoration: none; 
+  }
+  
+  article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  h1 {
+      display: inline-block;
+      background-color: black;
+      color: white;
+        font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 900px;
+    height: 900px;
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+  
+  .boxOne{
+    grid-column: 1/2;
+    grid-row: 1/2; 
+    width: 450px;
+    height: 400px;
+    background-color: pink;
+
+  }
+  
+  .boxTwo{
+    grid-column: 2/-1; 
+    grid-row: 1/2;
+    width: 450px;
+    height: 400px;
+    background-color: pink;
+  }
+  
+  .boxThree {
+    grid-column: 1/2; 
+    grid-row: 2/-1;
+    width: 450px;
+    height: 400px;
+    background-color: pink;
+  }
+  
+  .boxFour {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    width: 450px;
+    height: 400px;
+    background-color: pink;
+  }
+
+  .exp {
+    list-style-type: circle;
+  }
